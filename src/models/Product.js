@@ -8,7 +8,8 @@ class Product {
     this.name = name
     this.description = description
     this.price = price
-    this.available = true
+    //if an available argument is provided we will use that value, otherwise it will default to true.
+    this.available = available || true
   }
 
   static findAll() {
